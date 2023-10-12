@@ -1,9 +1,25 @@
+import Profile from '../assets/images/Profile2.png'
+import ArrowRight from '../assets/icons/arrow-right-icon.png';
+
 export default function Landing() {
     return (
         <section id="landing">
             <div className="width-limiter">
-                <div id="landing-content"></div>
-                <div className="image-wrapper"></div>
+                <div id="landing-content">
+                    <span className="span-title">&lt;Hello!/&gt;</span>
+                    <h1>Full-Stack Developer</h1>
+                    <p className="paragraph">Hello, I'm Anzel Ken Sakamoto a full-stack developer with a passion for design</p>
+                    <button id="projects-button">
+                        VIew Projects
+                        <div class="icon">
+                            <img src={ArrowRight} alt="Right" />
+                        </div>
+                    </button>
+                </div>
+
+                <div className="image-wrapper">
+                    <img src={Profile} alt="Me" />
+                </div>
             </div>
             <div class="landing-divider">
                 <svg
