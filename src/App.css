@@ -541,8 +541,11 @@ footer {
     font-weight: bold;
     letter-spacing: 1px;
     padding: 0.8rem 1rem;
-    text-transform: capitalize;
     width: fit-content;
+}
+
+.section-list.cap li {
+    text-transform: capitalize;
 }
 
 /* Mini Cards */
@@ -550,6 +553,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 .mini-card {
     background-color: var(--secondary);
@@ -558,6 +562,9 @@ footer {
     font-size: 1.1rem;
     padding: 1rem 1.2rem;
     width: clamp(275px, 40%, 300px);
+}
+.mini-card>:last-child {
+    margin-bottom: 0rem;
 }
 .mini-card h4 {
     color: var(--accent);
@@ -713,6 +720,7 @@ fill: var(--bgMedium);
     gap: 1rem;
     justify-content: space-evenly;
     padding: 2rem;
+    row-gap: 0rem;
 }
 
 #about-left {

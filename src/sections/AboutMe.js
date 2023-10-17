@@ -3,16 +3,17 @@ import Email from "../assets/icons/email-icon.png";
 import Download from "../assets/icons/arrow-down-icon.png";
 
 export default function AboutMe() {
-
     const aboutMe = {
-        Paragraph: "I'm Anzel Ken P. Sakamoto, a Software Engineering student studying at Lithan eduCLaaS, I have a passion for design, problem solving, learning new things and exploring new topics or challenges."
-    }
+        Paragraph:
+            "I'm Anzel Ken P. Sakamoto, a Software Engineering student studying at Lithan eduCLaaS, I have a passion for design, problem solving, learning new things and exploring new topics or challenges.",
+    };
 
     const experienceList = [
         {
             Place: "Lithan EduCLaaS",
             Title: "Full-stack web development bootcamp",
             Duration: 1,
+            Dates: "2022 - 2023"
         },
     ];
 
@@ -24,6 +25,7 @@ export default function AboutMe() {
                 <span>
                     {exp.Duration} {exp.Duration > 1 ? "Years" : " Year"}
                 </span>
+                <p>{exp.Dates}</p>
             </div>
         );
     });
@@ -55,21 +57,21 @@ export default function AboutMe() {
                 </div>
 
                 <div id="about-right">
-                    <p className="paragraph">
-                        {aboutMe.Paragraph}
-                        <br />
-                        <br />
-                        Recent projects that I've worked on are located at the bottom of the page.
-                    </p>
-                    <h3 className="section-subheading">Language Proficiency</h3>
+                    <p className="paragraph">{aboutMe.Paragraph}</p>
+
+                    <h3 className="section-subheading">Contact Me</h3>
                     <ul className="section-list">
+                        <li>anzelsakamoto@gmail.com</li>
+                    </ul>
+
+                    <h3 className="section-subheading">Language Proficiency</h3>
+                    <ul className="section-list cap">
                         <li>English</li>
                         <li>Filipino</li>
                     </ul>
+
                     <h3 className="section-subheading">Experience</h3>
-                    <div className="mini-card-container">
-                        {experiencesList}
-                    </div>
+                    <div className="mini-card-container">{experiencesList}</div>
                 </div>
             </div>
         </section>
