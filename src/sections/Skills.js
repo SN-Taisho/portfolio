@@ -88,7 +88,7 @@ export default function Skills() {
             </div>
 
             <section id="skills">
-                <span className="span-title">&lt;What I can offer/&gt;</span>
+                <span className="span-title">&lt;What I can offer /&gt;</span>
                 <h2 className="section-heading">Skills</h2>
 
                 <h3 className="skill-heading">Front-End-Development</h3>

@@ -7,7 +7,7 @@ export default function Landing() {
         <section id="landing">
             <div className="width-limiter">
                 <div id="landing-content">
-                    <span className="span-title-landing">&lt;Hello!/&gt;</span>
+                    <span className="span-title-landing">&lt;Simple, Yet Expressive /&gt;</span>
                     <h1>Full-Stack Developer</h1>
                     <p className="paragraph">Hello, I'm Anzel Sakamoto a full-stack developer with a passion for design.</p>
                     <button id="projects-button">

@@ -32,7 +32,7 @@ export default function AboutMe() {
 
     return (
         <section id="about-me">
-            <span className="span-title">&lt;Get To Know Me/&gt;</span>
+            <span className="span-title">&lt;Get To Know Me /&gt;</span>
             <h2 className="section-heading">About Me</h2>
 
             <div className="width-limiter">
