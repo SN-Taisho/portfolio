@@ -19,7 +19,7 @@ export default function AboutMe() {
 
     const experiencesList = experienceList.map((exp, index) => {
         return (
-            <div className="mini-card">
+            <div className="mini-card" key={index}>
                 <h4>{exp.Place}</h4>
                 <p>{exp.Title}</p>
                 <span>

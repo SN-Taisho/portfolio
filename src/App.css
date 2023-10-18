@@ -45,7 +45,7 @@ html {
 }
 
 body {
-    background-color: var(--bgMedium);
+    background-color: var(--bgLight);
 }
 
 * {
@@ -493,6 +493,7 @@ footer {
     letter-spacing: 1px;
     margin: 1px auto -10px;    
     width: fit-content;
+    text-transform: capitalize;
 }
 
 .section-heading {
@@ -582,8 +583,7 @@ footer {
 }
 
 
-/*----------  Home  ----------*/
-/* Landing */
+/*----------  Landing Section  ----------*/
 section#landing {
     background-color: var(--bgLight);
     position: relative;
@@ -695,7 +695,7 @@ section#landing .image-wrapper img {
 }
 
 .landing-divider {
-    bottom: 0px;
+    bottom: -1px;
     left: 0;
     line-height: 0;
     overflow: hidden;
@@ -713,7 +713,11 @@ section#landing .image-wrapper img {
 fill: var(--bgMedium);
 }
 
-/* About Me */
+/*----------  About Me  ----------*/
+#about-me {
+    background-color: var(--bgMedium);
+    padding-bottom: 8rem;
+}
 #about-me div.width-limiter {
     display: flex;
     flex-wrap: wrap;
@@ -739,6 +743,7 @@ fill: var(--bgMedium);
     border-radius: 3px;
     overflow: hidden;
     width: clamp(250px, 100%, 400px);
+    z-index: 2;
 }
 #about-left .image-wrapper img {
     height: 100%;
@@ -753,7 +758,7 @@ fill: var(--bgMedium);
     top: -32px;
     width: clamp(250px, 100%, 400px);
     transform: translateY(10px);
-    z-index: -1;
+    z-index: 1;
 }
 @keyframes float {
     0% {
@@ -880,6 +885,81 @@ fill: var(--bgMedium);
     height: fit-content;
     padding: 1rem;
     width: clamp(300px, 85%, 650px);
+}
+
+/*----------  Skills  ----------*/
+.skills-divider {
+    left: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.skills-divider svg {
+    display: block;
+    height: 50px;
+    position: relative;
+    width: calc(100% + 1.3px);
+}
+.skills-divider .shape-fill {
+    fill: var(--bgMedium);
+}
+
+section#skills {
+    padding: 3rem 0rem;
+    margin-top: -135px;
+}
+#skills .width-limiter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; 
+    justify-content: center;
+    margin: 2rem auto 3rem;
+    padding: 0rem 2rem;
+}
+#skills .width-limiter:last-child {
+    margin: 2rem auto 0rem;
+}
+
+.skill-heading {
+    color: var(--accent);
+    font-family: var(--hFont);
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 2.5rem 1rem 1rem;
+}
+
+.skill-card {
+    background-color: var(--bgMedium);
+    border-radius: 5px;
+    padding: 1rem 0.5rem 0.5rem;
+    width: 250px;
+    transition: 0.3s ease-out;
+}
+.skill-card:hover {
+    box-shadow: 0px 0px 15px var(--accent);
+    transform: scale(1.05);
+}
+.skill-card img {
+    aspect-ratio: 1/1;
+    border-radius: 2px;
+    display: block;
+    margin: 0rem auto 1rem;
+    width: 200px;
+}
+
+.skill-card p {
+    color: var(--white);
+    font-family: var(--pFont);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 
