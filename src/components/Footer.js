@@ -66,13 +66,13 @@ export default function Footer() {
                     </div>
 
                     <div className="foot-socials">
-                        <a href="/linkedin" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/anzel-ken-sakamoto-2437bb250" title="LinkedIn">
                             <img src={Linkedin} alt="LinkedIn Icon" />
                         </a>
-                        <a href="/github" title="Github">
+                        <a href="https://github.com/SN-Taisho" title="Github">
                             <img src={Github} alt="Github Icon" />
                         </a>
-                        <a href="/instagram" title="Instagram">
+                        <a href="https://www.instagram.com/sn.taisho/" title="Instagram">
                             <img src={Instagram} alt="Instagram Icon" />
                         </a>
                         <button onClick={scrollToTop} title="Back To Top">
