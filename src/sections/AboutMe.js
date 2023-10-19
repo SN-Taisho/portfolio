@@ -7,7 +7,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 export default function AboutMe() {
     const aboutMe = {
         Paragraph:
-            "I'm Anzel Ken P. Sakamoto, a Software Engineering student studying at Lithan eduCLaaS, I have a passion for design, problem solving, learning new things and exploring new topics or challenges.",
+            "I'm Anzel Ken P. Sakamoto, a Software Engineering student studying at Lithan eduCLaaS, I have a passion for design, problem solving, learning new things and exploring new topics.",
     };
 
     const experienceList = [
