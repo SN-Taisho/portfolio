@@ -68,7 +68,9 @@ export default function Skills() {
                     <h2 className="section-heading">Skills</h2>
                 </ScrollAnimation>
 
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
                 <h3 className="skill-heading">Front-End-Development</h3>
+                </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
                     <div className="width-limiter">
                         {frontEndSkills.map((skill, index) => (
@@ -79,8 +81,10 @@ export default function Skills() {
                         ))}
                     </div>
                 </ScrollAnimation>
-
+                
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
                 <h3 className="skill-heading">Back-End-Development</h3>
+                </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
                     <div className="width-limiter">
                         {backEndSkills.map((skill, index) => (
@@ -92,7 +96,9 @@ export default function Skills() {
                     </div>
                 </ScrollAnimation>
 
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
                 <h3 className="skill-heading">Other Skills</h3>
+                </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
                     <div className="width-limiter">
                         {otherSkills.map((skill, index) => (
