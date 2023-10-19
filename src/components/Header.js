@@ -79,17 +79,17 @@ export default function Header() {
 
                     <ul id="social-links" className="align-center">
                         <li>
-                            <a id="linkedIn" href="/linkedin" title="LinkedIn">
+                            <a id="linkedIn" href="https://www.linkedin.com/in/anzel-ken-sakamoto-2437bb250" title="LinkedIn">
                                 <img src={LinkedIn} alt="LinkedIn Icon" width={25} height={25} />
                             </a>
                         </li>
                         <li>
-                            <a id="github" href="/github" title="Github">
+                            <a id="github" href="https://github.com/SN-Taisho" title="Github">
                                 <img src={Github} alt="LinkedIn Icon" width={25} height={25} />
                             </a>
                         </li>
                         <li>
-                            <a id="instagram" href="/instagram" title="Instagram">
+                            <a id="instagram" href="https://www.instagram.com/sn.taisho/" title="Instagram">
                                 <img src={Instagram} alt="LinkedIn Icon" width={25} height={25} />
                             </a>
                         </li>

@@ -18,7 +18,7 @@ export default function RecentProjects() {
             Title: "ABC Car Portal",
             Tags: ["Spring Boot", "Spring Security", "Java", "MySQL"],
             Image: "https://res.cloudinary.com/zeru-taisho/image/upload/v1692958308/ABC%20Car%20Portal/Home_ynbias.png",
-            Link: "#/car-portal",
+            Link: "#/abc-car-portal",
         },
         {
             Title: "Know You Neighborhood",

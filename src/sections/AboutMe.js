@@ -19,19 +19,13 @@ export default function AboutMe() {
         },
     ];
 
-    const experiencesList = experienceList.map((exp, index) => {
-        return (
-            <div className="mini-card" key={index}>
-                <h4>{exp.Place}</h4>
-                <p>{exp.Title}</p>
-                <span>
-                    {exp.Duration} {exp.Duration > 1 ? "Years" : " Year"}
-                </span>
-                <p>{exp.Dates}</p>
-            </div>
-        );
-    });
+    const downloadClick = () => {
+        window.location.href = "https://drive.google.com/u/7/uc?id=1-70GrGUtZVFpdsoN2z_XHj3ST4h9fupL&export=download";
+    };
 
+    const emailClick = () => {
+        window.location.href = "mailto:anzelsakamoto@gmail.com";
+    };
     return (
         <section id="about-me">
             <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
@@ -50,12 +44,12 @@ export default function AboutMe() {
                             <div className="pseudo"></div>
                         </div>
 
-                        <button id="send-email">
+                        <button id="send-email" onClick={emailClick}>
                             Send an Email
                             <img src={Email} alt="Email Icon" width={32} />
                         </button>
 
-                        <button id="download-cv">
+                        <button id="download-cv" onClick={downloadClick}>
                             <div className="text">Download CV</div>
                             <img src={Download} alt="Download Icon" />
                         </button>
@@ -76,7 +70,18 @@ export default function AboutMe() {
                         </ul>
 
                         <h3 className="section-subheading">Experience</h3>
-                        <div className="mini-card-container">{experiencesList}</div>
+                        <div className="mini-card-container">
+                            {experienceList.map((exp, index) => (
+                                <div className="mini-card" key={index}>
+                                    <h4>{exp.Place}</h4>
+                                    <p>{exp.Title}</p>
+                                    <span>
+                                        {exp.Duration} {exp.Duration > 1 ? "Years" : " Year"}
+                                    </span>
+                                    <p>{exp.Dates}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </ScrollAnimation>
