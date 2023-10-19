@@ -5,7 +5,7 @@ class BackHome extends Component {
     render() {
 
         function goHome() {
-            window.location.href="/zeru-sakamoto.dev";
+            window.location.href="/zeru-sakamoto.dev/";
         }
 
         return (

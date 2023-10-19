@@ -68,7 +68,7 @@ export default function Header() {
         <>
             <header>
                 <div className="width-limiter align-center justify-evenly">
-                    <a id="logo-text" className="align-center" href="/">
+                    <a id="logo-text" className="align-center" href="/zeru-sakamoto.dev/">
                         <img src={Logo} alt="Logo" width={60} />
                         <h1>Zeru</h1>
                     </a>

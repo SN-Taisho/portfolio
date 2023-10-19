@@ -379,7 +379,8 @@ footer {
     letter-spacing: 3px;
 }
 
-.footer-subcont button {
+.footer-subcont button, 
+.footer-subcont a {
     background-color: transparent;
     border: none;
     color: var(--white);
@@ -387,57 +388,12 @@ footer {
     font-family: var(--pFont);
     font-size: 1rem;
     padding: 0.7rem 1rem;
+    text-decoration: none;
     width: fit-content;
 }
-.footer-subcont button:hover {
+.footer-subcont button:hover, 
+.footer-subcont a:hover {
     background-color: var(--bgDark);
-}
-
-.message-form-container {
-    width: 300px;
-}
-
-.message-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.input {
-    background-color: var(--bgMedium);
-    border: none;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: -3px 0px 0px transparent;
-    color: var(--white);
-    font-family: var(--pFont);
-    font-size: 1rem;
-    outline: none;
-    padding: 10px 15px;
-    resize: none;
-    transition: 0.3s ease-in-out;
-}
-.input:focus {
-    border-radius: 0px 3px 0px 0px;
-    box-shadow: -3px 0px 0px var(--accent);
-}
-
-.message-submit {
-    background-color: var(--accent);
-    border-radius: 3px;
-    border: 2px solid transparent;
-    color: var(--bgDark);
-    cursor: pointer;
-    font-family: var(--pFont);
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: 0.5rem;
-    transition: 0.3s ease-in-out;
-}
-.message-submit:hover {
-    background-color:  var(--bgMedium);
-    border: 2px solid var(--primary);
-    color: var(--primary);
 }
 
 /*  Footer Bottom */
@@ -449,7 +405,7 @@ footer {
     display: flex;
     font-family: var(--pFont);
     height: 50px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0rem 2rem;
 }
 
@@ -943,7 +899,7 @@ section#skills {
     border: 2px solid transparent;
     border-radius: 5px;
     padding: 1rem 0.5rem 0.5rem;
-    width: 250px;
+    width: clamp(150px, 30%,  200px);
     transition: 0.3s ease-out;
 }
 .skill-card:hover {
@@ -957,16 +913,17 @@ section#skills {
     display: block;
     margin: 0rem auto 1rem;
     user-select: none;
-    width: 200px;
+    width: 80%;
 }
 
 .skill-card p {
     color: var(--white);
+    display: block;
     font-family: var(--pFont);
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: center;
     text-transform: capitalize;
 }
@@ -991,7 +948,7 @@ section#skills {
 }
 .project-card img {
     cursor: pointer;
-    height: 100%;
+    height: 101%;
     transition: 0.3s ease-out;
     user-select: none;
     width: 100%;
@@ -1006,7 +963,7 @@ section#skills {
     padding: 100%;
     position: absolute;
     text-align: center;
-    top: 125px;
+    top: 50%;
     transform: translate(-50%, -50%);
     transition: 0.5s ease;
 }
@@ -1333,6 +1290,10 @@ section#recent-projects {
         padding: 0rem 1rem;
     }
 
+    #footer-bot>div {
+        justify-content: space-between;
+    }
+    
     section#landing>.width-limiter  {
         flex-direction: column;
     }

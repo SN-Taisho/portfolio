@@ -35,22 +35,17 @@ export default function Footer() {
                     <div className="footer-subcont-container">
                         <div className="footer-subcont">
                             <h3 className="footer-subheader">Quick Links</h3>
-                            <button>About Me</button>
-                            <button>Contact Info</button>
-                            <button>My Skills</button>
-                            <button>My Projects</button>
+                            <a href="#/jumpstart">Jumpstart</a>
+                            <a href="#/abc-job-portal">Job Portal</a>
+                            <a href="#/abc-car-portal">Car Portal</a>
                         </div>
 
-                        <div className="message-form-container">
-                            <h3 className="footer-subheader">Send A Message</h3>
-                            <form className="message-form">
-                                <input className="input" type="text" placeholder="Subject" required />
-                                <textarea className="input" placeholder="Body" rows="7" required></textarea>
-                                <button type="submit" className="message-submit">
-                                    Send Message
-                                </button>
-                            </form>
+                        <div className="footer-subcont">
+                            <h3 className="footer-subheader">Contact Me via</h3>
+                            <a href="mailto:anzelsakamoto@gmail.com">Email</a>
+                            <a href="https://www.linkedin.com/in/anzel-ken-sakamoto-2437bb250">LinkedIn</a>
                         </div>
+
                     </div>
                 </div>
             </div>
