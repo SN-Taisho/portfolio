@@ -504,6 +504,7 @@ footer {
     letter-spacing: 3px;
     margin: 0rem auto;
     width: fit-content;
+    z-index: 3;
 }
 
 .section-subheading {
@@ -593,6 +594,7 @@ section#landing>.width-limiter {
     display: flex;
     height: 720px;
     justify-content: center;
+    overflow: hidden;
 }
 
 #landing-content {
@@ -716,7 +718,8 @@ fill: var(--bgMedium);
 /*----------  About Me  ----------*/
 #about-me {
     background-color: var(--bgMedium);
-    padding-bottom: 8rem;
+    padding: 10rem 0rem 8rem;
+    margin-top: -10rem;
 }
 #about-me div.width-limiter {
     display: flex;
@@ -896,6 +899,7 @@ fill: var(--bgMedium);
     top: 0;
     width: 100%;
     z-index: -1;
+    margin-bottom: -250px;
 }
 .skills-divider svg {
     display: block;
@@ -908,8 +912,9 @@ fill: var(--bgMedium);
 }
 
 section#skills {
-    padding: 3rem 0rem;
-    margin-top: -135px;
+    padding: 10rem 0rem 4rem;
+    margin-top: -10rem;
+    overflow: hidden;
 }
 #skills .width-limiter {
     display: flex;
@@ -917,7 +922,8 @@ section#skills {
     gap: 1.5rem; 
     justify-content: center;
     margin: 2rem auto 3rem;
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
+    overflow: hidden;
 }
 #skills .width-limiter:last-child {
     margin: 2rem auto 0rem;
@@ -934,12 +940,14 @@ section#skills {
 
 .skill-card {
     background-color: var(--bgMedium);
+    border: 2px solid transparent;
     border-radius: 5px;
     padding: 1rem 0.5rem 0.5rem;
     width: 250px;
     transition: 0.3s ease-out;
 }
 .skill-card:hover {
+    border: 2px solid var(--accent);
     box-shadow: 0px 0px 15px var(--accent);
     transform: scale(1.05);
 }
@@ -948,6 +956,7 @@ section#skills {
     border-radius: 2px;
     display: block;
     margin: 0rem auto 1rem;
+    user-select: none;
     width: 200px;
 }
 
@@ -962,6 +971,109 @@ section#skills {
     text-transform: capitalize;
 }
 
+
+/*----------  Projects Cards  ----------*/
+.project-card {
+    background-color: var(--bgLight);
+    border-radius: 5px;
+    padding: 1rem;
+    width: clamp(300px, 80%, 450px);
+}
+
+.project-card .image-wrapper {
+    aspect-ratio: 16/9;
+    display: block;
+    border-radius: 2px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0rem auto;
+    position: relative;
+}
+.project-card img {
+    cursor: pointer;
+    height: 100%;
+    transition: 0.3s ease-out;
+    user-select: none;
+    width: 100%;
+}
+.project-card p {
+    background-color: transparent;
+    color: transparent;
+    font-family: var(--hFont);
+    font-size: 2rem;
+    left: 50%; 
+    letter-spacing: 3px;
+    padding: 100%;
+    position: absolute;
+    text-align: center;
+    top: 125px;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease;
+}
+
+.project-card .image-wrapper:hover p {
+    background-color: #060c1195;
+    color: var(--accent);
+    text-shadow: 3px 3px 5px var(--bgDark);
+}
+.project-card .image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.project-card .card-title {
+    color: var(--white);
+    font-family: var(--hFont);
+    font-size: 1.65rem;
+    letter-spacing: 3px;
+    margin: 15px auto 5px;
+    text-shadow: 3px 3px 5px var(--bgDark);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.project-tags span {
+    background-color: var(--bgDark);
+    border-radius: 5px;
+    color: var(--accent);
+    font-family: var(--pFont);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}
+
+/*----------  Recent Projects  ----------*/
+.projects-divider {
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.projects-divider svg {
+    display: block;
+    height: 110px;
+    position: relative;
+    transform: rotateY(180deg);
+    width: calc(100% + 1.3px);
+}
+.projects-divider .shape-fill {
+    fill: var(--bgLight);
+}
+
+section#recent-projects {
+    background-color: var(--bgMedium);
+    padding-top: 150px;
+}
+
+#recent-projects .width-limiter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 2rem 4rem;
+    gap: 2rem;
+}
 
 
 /*=====  End of Spceifics  ======*/

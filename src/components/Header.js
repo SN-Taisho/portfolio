@@ -34,6 +34,23 @@ export default function Header() {
         }
     };
 
+    const scrollToAboutMe = () => {
+        document.getElementById("about-me").scrollIntoView({behavior: "smooth"});
+    }
+    const scrollToContact = () => {
+        document.getElementById("about-right").scrollIntoView({behavior: "smooth"});
+        setTimeout(function() {
+            document.getElementById("contact-email").classList.add("animate__animated", "animate__headShake");
+        }, 1300);
+        document.getElementById("contact-email").classList.remove("animate__animated", "animate__headShake");
+    }
+    const scrollToSkills= () => {
+        document.getElementById("skills").scrollIntoView({behavior: "smooth"});
+    }
+    const scrollToProjects = () => {
+        document.getElementById("recent-projects").scrollIntoView({behavior: "smooth"});
+    }
+
     return (
         <>
             <header>
@@ -46,16 +63,16 @@ export default function Header() {
                     <div id="nav-links" className="align-center">
                         <ul id="section-links" className="align-center">
                             <li>
-                                <button>About Me</button>
+                                <button onClick={scrollToAboutMe}>About Me</button>
                             </li>
                             <li>
-                                <button>Contact</button>
+                                <button onClick={scrollToContact}>Contact</button>
                             </li>
                             <li>
-                                <button>Skills</button>
+                                <button onClick={scrollToSkills}>Skills</button>
                             </li>
                             <li>
-                                <button>Projects</button>
+                                <button onClick={scrollToProjects}>Projects</button>
                             </li>
                         </ul>
                     </div>

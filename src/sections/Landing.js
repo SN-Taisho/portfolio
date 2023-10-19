@@ -3,14 +3,19 @@ import ArrowRight from '../assets/icons/arrow-right-icon.png';
 
 export default function Landing() {
 
+    const scrollToProjects = () => {
+        document.getElementById("recent-projects").scrollIntoView({behavior: "smooth"});
+    }
+
     return (
         <section id="landing">
             <div className="width-limiter">
-                <div id="landing-content">
+
+                <div id="landing-content" className='animate__animated animate__fadeInLeft'>
                     <span className="span-title-landing">&lt;Simple, Yet Expressive /&gt;</span>
                     <h1>Full-Stack Developer</h1>
                     <p className="paragraph">Hello, I'm Anzel Sakamoto a full-stack developer with a passion for design.</p>
-                    <button id="projects-button">
+                    <button id="projects-button" onClick={scrollToProjects}>
                         VIew Projects
                         <div className="icon">
                             <img src={ArrowRight} alt="Right" />
@@ -18,7 +23,7 @@ export default function Landing() {
                     </button>
                 </div>
 
-                <div className="image-wrapper">
+                <div className="image-wrapper animate__animated animate__fadeInRight">
                     <img src={Profile} alt="Me" />
                 </div>
             </div>

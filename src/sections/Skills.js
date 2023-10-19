@@ -1,3 +1,5 @@
+import ScrollAnimation from "react-animate-on-scroll";
+
 export default function Skills() {
     const frontEndSkills = [
         {
@@ -17,15 +19,6 @@ export default function Skills() {
             Image: "skills/react-js-logo.png",
         },
     ];
-
-    const frontEndSkillsList = frontEndSkills.map((skill, index) => {
-        return (
-            <div className="skill-card" key={index}>
-                <img src={skill.Image} alt={skill.Image.replace("skills/", "")} width={200} />
-                <p>{skill.Name}</p>
-            </div>
-        );
-    });
 
     const backEndSkills = [
         {
@@ -50,34 +43,16 @@ export default function Skills() {
         },
     ];
 
-    const backEndSkillsList = backEndSkills.map((skill, index) => {
-        return (
-            <div className="skill-card" key={index}>
-                <img src={skill.Image} alt={skill.Image.replace("skills/", "")} width={200} />
-                <p>{skill.Name}</p>
-            </div>
-        );
-    });
-
     const otherSkills = [
         {
             Name: "Figma Design",
-            Image: "skills/figma-logo.png"
+            Image: "skills/figma-logo.png",
         },
         {
             Name: "Pixel Art",
-            Image: "skills/aseprite-logo.png"
-        }
+            Image: "skills/aseprite-logo.png",
+        },
     ];
-
-    const otherSkillsList = otherSkills.map((skill, index) => {
-        return (
-            <div className="skill-card" key={index}>
-                <img src={skill.Image} alt={skill.Image.replace("skills/", "")} width={200} />
-                <p>{skill.Name}</p>
-            </div>
-        );
-    });
 
     return (
         <>
@@ -88,17 +63,46 @@ export default function Skills() {
             </div>
 
             <section id="skills">
-                <span className="span-title">&lt;What I can offer /&gt;</span>
-                <h2 className="section-heading">Skills</h2>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
+                    <span className="span-title">&lt;What I can offer /&gt;</span>
+                    <h2 className="section-heading">Skills</h2>
+                </ScrollAnimation>
 
                 <h3 className="skill-heading">Front-End-Development</h3>
-                <div className="width-limiter">{frontEndSkillsList}</div>
+                <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
+                    <div className="width-limiter">
+                        {frontEndSkills.map((skill, index) => (
+                            <div className="skill-card" key={index}>
+                                <img src={skill.Image} alt={skill.Image.replace("skills/", "")} width={200} />
+                                <p>{skill.Name}</p>
+                            </div>
+                        ))}
+                    </div>
+                </ScrollAnimation>
 
                 <h3 className="skill-heading">Back-End-Development</h3>
-                <div className="width-limiter">{backEndSkillsList}</div>
+                <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
+                    <div className="width-limiter">
+                        {backEndSkills.map((skill, index) => (
+                            <div className="skill-card" key={index}>
+                                <img src={skill.Image} alt={skill.Image.replace("skills/", "")} width={200} />
+                                <p>{skill.Name}</p>
+                            </div>
+                        ))}
+                    </div>
+                </ScrollAnimation>
 
                 <h3 className="skill-heading">Other Skills</h3>
-                <div className="width-limiter">{otherSkillsList}</div>
+                <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
+                    <div className="width-limiter">
+                        {otherSkills.map((skill, index) => (
+                            <div className="skill-card" key={index}>
+                                <img src={skill.Image} alt={skill.Image.replace("skills/", "")} width={200} />
+                                <p>{skill.Name}</p>
+                            </div>
+                        ))}
+                    </div>
+                </ScrollAnimation>
             </section>
         </>
     );
