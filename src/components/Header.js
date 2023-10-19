@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 // IIMAGES
 import Logo from "../assets/images/Logo.png";
 import LinkedIn from "../assets/icons/linkedin-icon.png";
@@ -10,6 +12,13 @@ import Menu from "../assets/icons/menu-icon.png";
 import SideNav from "./SideNav";
 
 export default function Header() {
+
+    useEffect(() => {
+        if (window.location.hash) {
+            alert("WEEWOO")
+        }
+    })
+
 
     // TOGGLE SIDE NAV
     const toggleSideNav = () => {
@@ -50,6 +59,10 @@ export default function Header() {
     const scrollToProjects = () => {
         document.getElementById("recent-projects").scrollIntoView({behavior: "smooth"});
     }
+
+    const emailClick = () => {
+        window.location.href = "mailto:anzelsakamoto@gmail.com";
+    };
 
     return (
         <>
@@ -95,7 +108,7 @@ export default function Header() {
                         </li>
                         <li>
                             {" "}
-                            <button id="lets-talk" className="btnPress">
+                            <button id="lets-talk" className="btnPress" onClick={emailClick}>
                                 Let's Talk
                             </button>
                         </li>
