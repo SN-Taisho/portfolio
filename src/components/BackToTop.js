@@ -32,8 +32,8 @@ const BackToTop = () => {
     };
 
     return (
-        <button id="backToTop" onClick={scrollToTop} className={`scroll-appear-element ${isVisible ? "visible" : ""}`}>
-            <img id="arrowUp" src={ChevronUp} alt="Chevron Up" height={16}/>
+        <button id="back-to-top" onClick={scrollToTop} className={`scroll-appear-element ${isVisible ? "visible" : ""}`}>
+            <img id="arrow-up" src={ChevronUp} alt="Chevron Up" height={16}/>
             <p>Back to Top</p>
         </button>
     );

@@ -84,7 +84,7 @@ export default function Jumpstart() {
     });
 
     return (
-        <main id="projectDetailsContainer">
+        <main id="project-details-container">
             <BackHome />
 
             <h3 className="project-heading">{title}</h3>
@@ -99,6 +99,7 @@ export default function Jumpstart() {
                     <h4 className="project-subhead text-align-center">Introduction</h4>
                     <p className="project-intro">{desc}</p>
                 </div>
+
                 <div className="project-screenshot">
                     <img src={imageLink} alt="Project Screenshot" width={960} />
                 </div>
@@ -125,7 +126,6 @@ export default function Jumpstart() {
 
             <BackToTop />
 
-            <div id="projectPageFooter"></div>
         </main>
     );
 }

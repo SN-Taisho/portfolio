@@ -1,24 +1,14 @@
-import { useEffect } from "react";
-
 // IIMAGES
 import Logo from "../assets/images/Logo.png";
 import LinkedIn from "../assets/icons/linkedin-icon.png";
 import Github from "../assets/icons/github-icon.png";
 import Instagram from "../assets/icons/instagram-icon.png";
-
 import Menu from "../assets/icons/menu-icon.png";
 
-//  COMPONENTS
+// Components
 import SideNav from "./SideNav";
 
 export default function Header() {
-
-    useEffect(() => {
-        if (window.location.hash) {
-            alert("WEEWOO")
-        }
-    })
-
 
     // TOGGLE SIDE NAV
     const toggleSideNav = () => {
@@ -29,23 +19,32 @@ export default function Header() {
     };
 
     window.addEventListener("resize", () => {
-        let sideNav = document.getElementById("side-nav");
+        try {
+            let sideNav = document.getElementById("side-nav");
         if (window.innerWidth > 600) {
             sideNav.classList.remove("opened");
+        }
+        } catch (error) {
+            
         }
     });
 
     document.onclick = function (e) {
-        let sideNav = document.getElementById("side-nav");
+        try {
+            let sideNav = document.getElementById("side-nav");
         let sideNavBtn = document.getElementById("side-nav-btn");
         if (!sideNav.contains(e.target) && !sideNavBtn.contains(e.target)) {
             sideNav.classList.remove("opened");
+        }
+        } catch (error) {
+            
         }
     };
 
     const scrollToAboutMe = () => {
         document.getElementById("about-me").scrollIntoView({behavior: "smooth"});
     }
+
     const scrollToContact = () => {
         document.getElementById("about-right").scrollIntoView({behavior: "smooth"});
         setTimeout(function() {
