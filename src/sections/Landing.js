@@ -24,12 +24,11 @@ export default function Landing() {
                 </div>
 
                 <div className="image-wrapper animate__animated animate__fadeInRight">
-                    <img src={Profile} alt="Me" />
+                    <img src="https://placehold.co/400" alt="Me" />
                 </div>
             </div>
             <div className="landing-divider">
                 <svg
-                    data-name="Layer 1"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1200 120"
                     preserveAspectRatio="none">

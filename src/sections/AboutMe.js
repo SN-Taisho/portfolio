@@ -37,7 +37,7 @@ export default function AboutMe() {
                 <div className="width-limiter">
                     <div id="about-left">
                         <div className="image-wrapper">
-                            <img src={Profile} alt="Me" width={450} height={450} />
+                            <img src="https://placehold.co/400" alt="Me" width={450} height={450} />
                         </div>
 
                         <div className="float-container">

@@ -440,6 +440,7 @@ footer {
     font-size: 1.1rem;
     letter-spacing: 1px;
     margin-bottom: -5px;
+    text-shadow: 4px 4px 10px var(--bgDark);
 }
 .span-title {
     color: var(--accent);
@@ -542,8 +543,11 @@ footer {
 
 /*----------  Landing Section  ----------*/
 section#landing {
-    background-color: var(--bgLight);
+    /* background-color: var(--bgLight); */
     position: relative;
+    background-image: url(./assets/images/Landing.png);
+    background-position: center top;
+    background-size: cover;
 }
 section#landing>.width-limiter {
     align-items: center;
