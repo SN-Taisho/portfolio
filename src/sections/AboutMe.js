@@ -1,4 +1,4 @@
-import Profile from "../assets/images/Profile2-Alt.png";
+import Profile from "../assets/images/Profile.webp";
 import Email from "../assets/icons/email-icon.png";
 import Download from "../assets/icons/arrow-down-icon.png";
 
@@ -37,7 +37,7 @@ export default function AboutMe() {
                 <div className="width-limiter">
                     <div id="about-left">
                         <div className="image-wrapper">
-                            <img src="https://placehold.co/400" alt="Me" width={450} height={450} />
+                            <img src={Profile} alt="Me" width={450} height={450} />
                         </div>
 
                         <div className="float-container">

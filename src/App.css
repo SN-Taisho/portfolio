@@ -440,6 +440,7 @@ footer {
     font-size: 1.1rem;
     letter-spacing: 1px;
     margin-bottom: -5px;
+    font-weight: bold;
     text-shadow: 4px 4px 10px var(--bgDark);
 }
 .span-title {
@@ -703,7 +704,7 @@ fill: var(--bgMedium);
 
 #about-left .image-wrapper {
     aspect-ratio: 1/1;
-    border-radius: 3px;
+    border-radius: 4px;
     overflow: hidden;
     width: clamp(250px, 100%, 400px);
     z-index: 2;
@@ -738,7 +739,7 @@ fill: var(--bgMedium);
 .pseudo {
     animation: tilt 4s ease-in-out infinite;
     background-color: var(--secondary);
-    border-radius: 3px;
+    border-radius: 4px;
     height: 100%;
     transform: rotate(3deg);
     width: 100%;

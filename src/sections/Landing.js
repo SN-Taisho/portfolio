@@ -1,4 +1,3 @@
-import Profile from '../assets/images/Profile2.png'
 import ArrowRight from '../assets/icons/arrow-right-icon.png';
 
 export default function Landing() {
@@ -24,7 +23,7 @@ export default function Landing() {
                 </div>
 
                 <div className="image-wrapper animate__animated animate__fadeInRight">
-                    <img src="https://placehold.co/400" alt="Me" />
+                    <img src="https://placehold.co/400" alt="Me"  style={{opacity: "0"}}/>
                 </div>
             </div>
             <div className="landing-divider">
