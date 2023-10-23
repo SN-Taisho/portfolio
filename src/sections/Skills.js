@@ -45,6 +45,10 @@ export default function Skills() {
 
     const otherSkills = [
         {
+            Name: "Axure Prototyping",
+            Image: "skills/axure-rp-logo.png"
+        },
+        {
             Name: "Figma Design",
             Image: "skills/figma-logo.png",
         },
