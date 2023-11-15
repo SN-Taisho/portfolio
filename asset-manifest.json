@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/zeru-sakamoto.dev/static/css/main.a39ef194.css",
-    "main.js": "/zeru-sakamoto.dev/static/js/main.d9705228.js",
+    "main.css": "/zeru-sakamoto.dev/static/css/main.0ee74e86.css",
+    "main.js": "/zeru-sakamoto.dev/static/js/main.4a685fb8.js",
     "static/js/787.3ac35d47.chunk.js": "/zeru-sakamoto.dev/static/js/787.3ac35d47.chunk.js",
     "static/media/monocraft.ttf": "/zeru-sakamoto.dev/static/media/monocraft.6069cdc153f4c1f236c1.ttf",
     "static/media/superstar.ttf": "/zeru-sakamoto.dev/static/media/superstar.cbeb747364ac0348b958.ttf",
     "static/media/Profile.webp": "/zeru-sakamoto.dev/static/media/Profile.cfb093065dbdcd3bc196.webp",
     "static/media/Landing.png": "/zeru-sakamoto.dev/static/media/Landing.10564993f1304cb95fae.png",
     "index.html": "/zeru-sakamoto.dev/index.html",
-    "main.a39ef194.css.map": "/zeru-sakamoto.dev/static/css/main.a39ef194.css.map",
-    "main.d9705228.js.map": "/zeru-sakamoto.dev/static/js/main.d9705228.js.map",
+    "main.0ee74e86.css.map": "/zeru-sakamoto.dev/static/css/main.0ee74e86.css.map",
+    "main.4a685fb8.js.map": "/zeru-sakamoto.dev/static/js/main.4a685fb8.js.map",
     "787.3ac35d47.chunk.js.map": "/zeru-sakamoto.dev/static/js/787.3ac35d47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a39ef194.css",
-    "static/js/main.d9705228.js"
+    "static/css/main.0ee74e86.css",
+    "static/js/main.4a685fb8.js"
   ]
 }
