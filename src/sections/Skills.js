@@ -1,13 +1,13 @@
 import ScrollAnimation from "react-animate-on-scroll";
 
 export default function Skills() {
-    const frontEndSkills = [
+    const languages = [
         {
-            Name: "HTML",
+            Name: "HTML 5",
             Image: "skills/html5-logo.png",
         },
         {
-            Name: "CSS",
+            Name: "CSS 3",
             Image: "skills/css3-logo.png",
         },
         {
@@ -15,23 +15,36 @@ export default function Skills() {
             Image: "skills/javascript-logo.png",
         },
         {
-            Name: "React JS",
-            Image: "skills/react-js-logo.png",
+            Name: "Java",
+            Image: "skills/java-logo.png",
         },
-    ];
-
-    const backEndSkills = [
+        {
+            Name: "PHP",
+            Image: "skills/php-logo.png",
+        },
         {
             Name: "MySQL",
             Image: "skills/mysql-logo.png",
         },
+
+    ];
+
+    const frameworksAndAPIs = [
         {
-            Name: "Spring MVC",
-            Image: "skills/spring-logo.png",
+            Name: "React JS",
+            Image: "skills/react-js-logo.png",
         },
         {
             Name: "Spring Boot w/ Spring Security",
             Image: "skills/spring-boot-logo.png",
+        },
+        {
+            Name: "PHP Laravel",
+            Image: "skills/laravel-logo.png",
+        },
+        {
+            Name: "Spring MVC",
+            Image: "skills/spring-logo.png",
         },
         {
             Name: "REST API",
@@ -73,11 +86,11 @@ export default function Skills() {
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-                <h3 className="skill-heading">Front-End-Development</h3>
+                <h3 className="skill-heading">Languages</h3>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
                     <div className="width-limiter">
-                        {frontEndSkills.map((skill, index) => (
+                        {languages.map((skill, index) => (
                             <div className="skill-card" key={index}>
                                 <img src={skill.Image} alt={skill.Image.replace("skills/", "")} width={200} />
                                 <p>{skill.Name}</p>
@@ -87,11 +100,11 @@ export default function Skills() {
                 </ScrollAnimation>
                 
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-                <h3 className="skill-heading">Back-End-Development</h3>
+                <h3 className="skill-heading">Frameworks and APIs</h3>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
                     <div className="width-limiter">
-                        {backEndSkills.map((skill, index) => (
+                        {frameworksAndAPIs.map((skill, index) => (
                             <div className="skill-card" key={index}>
                                 <img src={skill.Image} alt={skill.Image.replace("skills/", "")} width={200} />
                                 <p>{skill.Name}</p>

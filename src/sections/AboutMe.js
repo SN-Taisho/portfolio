@@ -12,10 +12,18 @@ export default function AboutMe() {
 
     const experienceList = [
         {
+            Place: "Strike Academy",
+            Title: "Full-stack web developer",
+            Duration: 4,
+            DurationType: "Weeks",
+            DateRange: "October - November",
+        },
+        {
             Place: "Lithan EduCLaaS",
             Title: "Full-stack web development bootcamp",
             Duration: 1,
-            Dates: "2022 - 2023",
+            DurationType: "Years",
+            DateRange: "2022 - 2023",
         },
     ];
 
@@ -76,9 +84,9 @@ export default function AboutMe() {
                                     <h4>{exp.Place}</h4>
                                     <p>{exp.Title}</p>
                                     <span>
-                                        {exp.Duration} {exp.Duration > 1 ? "Years" : " Year"}
+                                        {exp.Duration} {exp.DurationType}
                                     </span>
-                                    <p>{exp.Dates}</p>
+                                    <p>{exp.DateRange}</p>
                                 </div>
                             ))}
                         </div>

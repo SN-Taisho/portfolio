@@ -369,6 +369,7 @@ footer {
 .footer-subcont {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     width: 250px;
 }
 
@@ -1138,8 +1139,7 @@ section#recent-projects {
 
 .project-screenshot {
     margin: auto;
-    min-width: 300px;
-    width: auto;
+    width: clamp(250px, 90%, 900px);
 }
 
 .project-screenshot img {
@@ -1327,8 +1327,14 @@ section#recent-projects {
         flex-direction: column;
         padding: 2rem 1rem;
     }
+    .footer-subcont-container {
+        flex-direction: row ;
+        justify-content: space-evenly;
+        width: 80%;
+    }
     .footer-subcont {
-        width: 300px;
+        align-items: center;
+        text-align: center;
     }
     #copyright p .extension {
         display: none;
@@ -1357,6 +1363,10 @@ section#recent-projects {
 
     .skill-card p {
         font-size: 0.8rem;
+    }
+
+    .details-background {
+        padding: 1rem;
     }
 }
 /*=====  End of Break-points  ======*/
