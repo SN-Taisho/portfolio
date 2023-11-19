@@ -16,13 +16,13 @@ export default function AboutMe() {
             Title: "Full-stack web developer",
             Duration: 4,
             DurationType: "Weeks",
-            DateRange: "October - November",
+            DateRange: "October 2023 - November 2023",
         },
         {
             Place: "Lithan EduCLaaS",
             Title: "Full-stack web development bootcamp",
             Duration: 1,
-            DurationType: "Years",
+            DurationType: "Year",
             DateRange: "2022 - 2023",
         },
     ];
