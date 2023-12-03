@@ -1089,7 +1089,7 @@ section#recent-projects {
     width: inherit;
 }
 
-#project-details-container  .project-tags {
+#project-details-container .project-tags {
     gap: 2rem;
     justify-content: center;
     margin: auto;

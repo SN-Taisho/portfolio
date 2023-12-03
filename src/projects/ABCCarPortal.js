@@ -84,14 +84,14 @@ export default function ABCCarPortal() {
     });
 
     return (
-        <main id="projectDetailsContainer">
+        <main id="project-details-container">
             <BackHome />
 
             <h3 className="project-heading">{title}</h3>
             {/* MAIN CONTENT */}
             <div className="project-details">
                 <div className="text-container">
-                    <ul className="project-tags align-center flex-wrap">
+                    <ul className="project-tags align-center flex-wrap list-style-none">
                         {tags.map((tag, index) => (
                             <li key={index}>{tag}</li>
                         ))}
