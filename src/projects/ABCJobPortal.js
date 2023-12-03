@@ -79,7 +79,7 @@ export default function ABCJobPortal() {
     });
 
     return (
-        <main id="projectDetailsContainer">
+        <main id="project-details-container">
             <BackHome />
 
             <h3 className="project-heading">{title}</h3>
