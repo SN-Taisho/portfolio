@@ -21,7 +21,7 @@ export default function RecentProjects() {
             Link: "#/abc-car-portal",
         },
         {
-            Title: "Know You Neighborhood",
+            Title: "Know Your Neighborhood",
             Tags: ["React JS", "Spring Boot", "REST API", "MySQL"],
             Image: "https://res.cloudinary.com/zeru-taisho/image/upload/v1692958801/Know%20Your%20Neighborhood/Home_n0qldd.png",
             Link: "#/know-your-neighborhood",
