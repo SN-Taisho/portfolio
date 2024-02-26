@@ -14,9 +14,9 @@ export default function AboutMe() {
         {
             Place: "Strike Academy",
             Title: "Software Apprentice",
-            Duration: 3,
+            Duration: 4,
             DurationType: "Months",
-            DateRange: "October 2023 - January 2024",
+            DateRange: "October 2023 - February 2024",
         },
         {
             Place: "Lithan EduCLaaS",
@@ -68,7 +68,7 @@ export default function AboutMe() {
 
                         <h3 className="section-subheading">Contact Me</h3>
                         <ul className="section-list">
-                            <li id="contact-email">anzelsakamoto@gmail.com</li>
+                            <li id="contact-email">anzelsakamoto<wbr/>@gmail.com</li>
                         </ul>
 
                         <h3 className="section-subheading">Language Proficiency</h3>

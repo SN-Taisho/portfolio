@@ -3,10 +3,15 @@ import ScrollAnimation from "react-animate-on-scroll";
 export default function Stats() {
     const statList = [
         {
-            Stat: "612 hrs",
+            Stat: "630+",
             Image: "stats/hourglass-icon.png",
-            Text: "Hours developing software",
+            Text: "hours of experience",
         },
+        {
+            Stat: "100+",
+            Image: "stats/uielement-icon.png",
+            Text: "UI elements designed and developed"
+        }
     ];
 
     return (

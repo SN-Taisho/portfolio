@@ -42,6 +42,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -344,9 +345,10 @@ footer {
 .bible-verse {
     background-color: var(--bgDark);
     border-radius: 5px;
+    box-sizing: border-box;
     height: fit-content;
     padding: 1rem;
-    width: clamp(275px, 80%, 500px);
+    width: clamp(264px, 80%, 500px);
 }
 
 .verse-parag {
@@ -522,7 +524,7 @@ footer {
     font-family: var(--pFont);
     font-size: 1.1rem;
     padding: 1rem 1.2rem;
-    width: clamp(275px, 40%, 300px);
+    width: clamp(264px, 40%, 300px);
 }
 .mini-card>:last-child {
     margin-bottom: 0rem;
@@ -684,20 +686,24 @@ section#landing .image-wrapper img {
 #stats-container .width-limiter {
     display: flex;
     flex-wrap: wrap;
+    gap: 2rem;
     justify-content: space-evenly;
     margin-bottom: 3rem;
+    padding: 0.5rem;
 }
 
 .stat-card {
     background-color: var(--bgLight);
     border-radius: 10px;
+    box-sizing: border-box;
     padding: 1.5rem;
+    width: clamp(250px, 95%, 400px);
 }
-
 .stat-card div {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 .stat-card h2 {
     font-family: var(--hFont);
@@ -706,17 +712,17 @@ section#landing .image-wrapper img {
     font-size: 5rem;
     text-transform: uppercase;
 }
-
+.stat-card img {
+    aspect-ratio: 1/1;
+    width: 144px;
+}
 .stat-card p {
     color: var(--headingLight);
     font-family: var(--pFont);
     font-size: 1.1rem;
     margin-top: 1rem;
     text-align: center;
-}
-
-.stat-card img {
-    width: 144px;
+    text-transform: capitalize;
 }
 
 /*----------  About Me  ----------*/
@@ -891,7 +897,7 @@ section#landing .image-wrapper img {
 #about-right {
     height: fit-content;
     padding: 1rem;
-    width: clamp(300px, 85%, 650px);
+    width: clamp(264px, 85%, 650px);
 }
 
 /*----------  Skills  ----------*/
@@ -1358,6 +1364,14 @@ section#recent-projects {
     .landing-divider svg {
         height: 75px;
     }
+
+    .stat-card img {
+        width: 92px;
+    }
+    .stat-card h2 {
+        font-size: 3rem;
+        width: fit-content;
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -1409,6 +1423,18 @@ section#recent-projects {
 
     .details-background {
         padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    header {
+        padding: 0rem 0.5rem;
+    }
+    #footer-bot div {
+        padding: 0rem 4px;
+    }
+    .foot-socials {
+        gap: 0rem;
     }
 }
 /*=====  End of Break-points  ======*/

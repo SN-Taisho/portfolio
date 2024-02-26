@@ -1,16 +1,34 @@
 import ArrowRight from "../assets/icons/arrow-right-icon.png";
 
+import React, { useState, useEffect } from "react";
+
 export default function Landing() {
+
     const scrollToProjects = () => {
         document.getElementById("recent-projects").scrollIntoView({ behavior: "smooth" });
     };
+
+    const [text, setText] = useState("Full-Stack Developer");
+
+    useEffect(() => {
+      const updateText = () => {
+        const width = window.innerWidth;
+        setText(width < 350 ? "Full-Stack Dev" : "Full-Stack Developer");
+      };
+  
+      updateText();
+      window.addEventListener("resize", updateText);
+  
+      // Cleanup function to remove the event listener
+      return () => window.removeEventListener("resize", updateText);
+    }, []);
 
     return (
         <section id="landing">
             <div className="width-limiter">
                 <div id="landing-content" className="animate__animated animate__fadeInLeft">
                     <span className="span-title-landing">&lt;Simple, Yet Expressive /&gt;</span>
-                    <h1>Full-Stack Developer</h1>
+                    <h1>{text}</h1>
                     <p className="paragraph">
                         Hello, I'm Anzel Sakamoto a full-stack developer with a passion for design.
                     </p>
