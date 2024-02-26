@@ -13,10 +13,10 @@ export default function AboutMe() {
     const experienceList = [
         {
             Place: "Strike Academy",
-            Title: "Full-stack web developer",
-            Duration: 4,
-            DurationType: "Weeks",
-            DateRange: "October 2023 - November 2023",
+            Title: "Software Apprentice",
+            Duration: 3,
+            DurationType: "Months",
+            DateRange: "October 2023 - January 2024",
         },
         {
             Place: "Lithan EduCLaaS",

@@ -674,7 +674,49 @@ section#landing .image-wrapper img {
     width: calc(140% + 1.3px);
 }
 .landing-divider .shape-fill {
-fill: var(--bgMedium);
+    fill: var(--bgMedium);
+}
+
+/*----------  Stats Section  ----------*/
+#stats-container {
+    background-color: var(--bgMedium);
+}
+#stats-container .width-limiter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background-color: var(--bgLight);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.stat-card div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.stat-card h2 {
+    font-family: var(--hFont);
+    letter-spacing: 2px;
+    color: var(--primary);
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.stat-card p {
+    color: var(--headingLight);
+    font-family: var(--pFont);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.stat-card img {
+    width: 144px;
 }
 
 /*----------  About Me  ----------*/
