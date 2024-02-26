@@ -1,3 +1,5 @@
+import ScrollAnimation from "react-animate-on-scroll";
+
 export default function Stats() {
     const statList = [
         {
@@ -9,17 +11,23 @@ export default function Stats() {
 
     return (
         <section id="stats-container">
-            <div className="width-limiter">
-                {statList.map((stat) => (
-                    <div className="stat-card">
-                        <div>
-                            <img img src={stat.Image} alt={stat.Image.replace("stats/", "")}  />
-                            <h2>{stat.Stat}</h2>
+            <ScrollAnimation animateIn="animate__zoomIn" animateOnce={true}>
+                <div className="width-limiter">
+                    {statList.map((stat) => (
+                        <div className="stat-card">
+                            <div>
+                                <img
+                                    img
+                                    src={stat.Image}
+                                    alt={stat.Image.replace("stats/", "")}
+                                />
+                                <h2>{stat.Stat}</h2>
+                            </div>
+                            <p>{stat.Text}</p>
                         </div>
-                        <p>{stat.Text}</p>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </ScrollAnimation>
         </section>
     );
 }
