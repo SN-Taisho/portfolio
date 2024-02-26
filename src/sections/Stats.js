@@ -18,8 +18,8 @@ export default function Stats() {
         <section id="stats-container">
             <ScrollAnimation animateIn="animate__zoomIn" animateOnce={true}>
                 <div className="width-limiter">
-                    {statList.map((stat) => (
-                        <div className="stat-card">
+                    {statList.map((stat, index) => (
+                        <div className="stat-card" key={index}>
                             <div>
                                 <img
                                     img

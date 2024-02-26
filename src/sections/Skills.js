@@ -66,6 +66,10 @@ export default function Skills() {
             Image: "skills/figma-logo.png",
         },
         {
+            Name: "Power BI Dashboarding",
+            Image: "skills/powerbi-logo.png",
+        },
+        {
             Name: "Pixel Art",
             Image: "skills/aseprite-logo.png",
         },
