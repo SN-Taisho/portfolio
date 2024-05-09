@@ -8,10 +8,10 @@ export default function Stats() {
             Text: "hours of experience",
         },
         {
-            Stat: "100+",
+            Stat: "120+",
             Image: "stats/uielement-icon.png",
-            Text: "UI elements designed and developed"
-        }
+            Text: "UI elements designed",
+        },
     ];
 
     return (
@@ -21,11 +21,7 @@ export default function Stats() {
                     {statList.map((stat, index) => (
                         <div className="stat-card" key={index}>
                             <div>
-                                <img
-                                    img
-                                    src={stat.Image}
-                                    alt={stat.Image.replace("stats/", "")}
-                                />
+                                <img img src={stat.Image} alt={stat.Image.replace("stats/", "")} />
                                 <h2>{stat.Stat}</h2>
                             </div>
                             <p>{stat.Text}</p>

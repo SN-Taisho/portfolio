@@ -12,6 +12,12 @@ export default function AboutMe() {
 
     const experienceList = [
         {
+            Place: "Horecabid",
+            Title: "Software Engineering Intern",
+            Duration: "Ongoing",
+            DateRange: "May 2024 - Present",
+        },
+        {
             Place: "Strike Academy",
             Title: "Software Apprentice",
             Duration: 4,
@@ -68,7 +74,11 @@ export default function AboutMe() {
 
                         <h3 className="section-subheading">Contact Me</h3>
                         <ul className="section-list">
-                            <li id="contact-email">anzelsakamoto<wbr/>@gmail.com</li>
+                            <li id="contact-email">
+                                anzelsakamoto
+                                <wbr />
+                                @gmail.com
+                            </li>
                         </ul>
 
                         <h3 className="section-subheading">Language Proficiency</h3>
