@@ -26,7 +26,6 @@ export default function Skills() {
             Name: "MySQL",
             Image: "skills/mysql-logo.png",
         },
-
     ];
 
     const frameworksAndAPIs = [
@@ -56,19 +55,23 @@ export default function Skills() {
         },
     ];
 
-    const otherSkills = [
+    const designAndStyling = [
+        {
+            Name: "Tailwind CSS",
+            Image: "skills/tailwind-logo.png",
+        },
         {
             Name: "Axure Prototyping",
-            Image: "skills/axure-rp-logo.png"
+            Image: "skills/axure-rp-logo.png",
         },
         {
             Name: "Figma Design",
             Image: "skills/figma-logo.png",
         },
-        {
-            Name: "Power BI Dashboarding",
-            Image: "skills/powerbi-logo.png",
-        },
+        // {
+        //     Name: "Power BI Dashboarding",
+        //     Image: "skills/powerbi-logo.png",
+        // },
         {
             Name: "Pixel Art",
             Image: "skills/aseprite-logo.png",
@@ -90,7 +93,7 @@ export default function Skills() {
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-                <h3 className="skill-heading">Languages</h3>
+                    <h3 className="skill-heading">Languages</h3>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
                     <div className="width-limiter">
@@ -102,9 +105,9 @@ export default function Skills() {
                         ))}
                     </div>
                 </ScrollAnimation>
-                
+
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-                <h3 className="skill-heading">Frameworks and APIs</h3>
+                    <h3 className="skill-heading">Frameworks and APIs</h3>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInRight" animateOnce={true}>
                     <div className="width-limiter">
@@ -118,11 +121,11 @@ export default function Skills() {
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-                <h3 className="skill-heading">Other Skills</h3>
+                    <h3 className="skill-heading">Design &amp; Styling</h3>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
                     <div className="width-limiter">
-                        {otherSkills.map((skill, index) => (
+                        {designAndStyling.map((skill, index) => (
                             <div className="skill-card" key={index}>
                                 <img src={skill.Image} alt={skill.Image.replace("skills/", "")} width={200} />
                                 <p>{skill.Name}</p>
