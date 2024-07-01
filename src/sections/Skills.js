@@ -34,16 +34,20 @@ export default function Skills() {
             Image: "skills/react-js-logo.png",
         },
         {
+            Name: "Angular JS",
+            Image: "skills/angularjs-logo.png",
+        },
+        {
             Name: "Yii 2 PHP",
             Image: "skills/yii2-logo.png",
         },
         {
-            Name: "Spring Boot w/ Spring Security",
-            Image: "skills/spring-boot-logo.png",
-        },
-        {
             Name: "PHP Laravel",
             Image: "skills/laravel-logo.png",
+        },
+        {
+            Name: "Spring Boot w/ Spring Security",
+            Image: "skills/spring-boot-logo.png",
         },
         {
             Name: "Spring MVC",
