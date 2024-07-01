@@ -1,9 +1,9 @@
 import ArrowRight from "../assets/icons/arrow-right-icon.png";
+import Profile2 from "../assets/images/Profile2.png";
 
 import React, { useState, useEffect } from "react";
 
 export default function Landing() {
-
     const scrollToProjects = () => {
         document.getElementById("recent-projects").scrollIntoView({ behavior: "smooth" });
     };
@@ -11,16 +11,16 @@ export default function Landing() {
     const [text, setText] = useState("Full-Stack Developer");
 
     useEffect(() => {
-      const updateText = () => {
-        const width = window.innerWidth;
-        setText(width < 350 ? "Full-Stack Dev" : "Full-Stack Developer");
-      };
-  
-      updateText();
-      window.addEventListener("resize", updateText);
-  
-      // Cleanup function to remove the event listener
-      return () => window.removeEventListener("resize", updateText);
+        const updateText = () => {
+            const width = window.innerWidth;
+            setText(width < 350 ? "Full-Stack Dev" : "Full-Stack Developer");
+        };
+
+        updateText();
+        window.addEventListener("resize", updateText);
+
+        // Cleanup function to remove the event listener
+        return () => window.removeEventListener("resize", updateText);
     }, []);
 
     return (
@@ -41,7 +41,7 @@ export default function Landing() {
                 </div>
 
                 <div className="image-wrapper animate__animated animate__fadeInRight">
-                    <img src="https://placehold.co/400" alt="Me" style={{ opacity: "0" }} />
+                    <img src={Profile2} alt="Shiroko" />
                 </div>
             </div>
             <div className="landing-divider">
