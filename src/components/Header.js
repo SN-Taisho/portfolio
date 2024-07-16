@@ -9,7 +9,6 @@ import Menu from "../assets/icons/menu-icon.png";
 import SideNav from "./SideNav";
 
 export default function Header() {
-
     // TOGGLE SIDE NAV
     const toggleSideNav = () => {
         let sideNav = document.getElementById("side-nav");
@@ -21,43 +20,39 @@ export default function Header() {
     window.addEventListener("resize", () => {
         try {
             let sideNav = document.getElementById("side-nav");
-        if (window.innerWidth > 600) {
-            sideNav.classList.remove("opened");
-        }
-        } catch (error) {
-            
-        }
+            if (window.innerWidth > 600) {
+                sideNav.classList.remove("opened");
+            }
+        } catch (error) {}
     });
 
     document.onclick = function (e) {
         try {
             let sideNav = document.getElementById("side-nav");
-        let sideNavBtn = document.getElementById("side-nav-btn");
-        if (!sideNav.contains(e.target) && !sideNavBtn.contains(e.target)) {
-            sideNav.classList.remove("opened");
-        }
-        } catch (error) {
-            
-        }
+            let sideNavBtn = document.getElementById("side-nav-btn");
+            if (!sideNav.contains(e.target) && !sideNavBtn.contains(e.target)) {
+                sideNav.classList.remove("opened");
+            }
+        } catch (error) {}
     };
 
     const scrollToAboutMe = () => {
-        document.getElementById("about-me").scrollIntoView({behavior: "smooth"});
-    }
+        document.getElementById("about-me").scrollIntoView({ behavior: "smooth" });
+    };
 
     const scrollToContact = () => {
-        document.getElementById("about-right").scrollIntoView({behavior: "smooth"});
-        setTimeout(function() {
+        document.getElementById("about-right").scrollIntoView({ behavior: "smooth" });
+        setTimeout(function () {
             document.getElementById("contact-email").classList.add("animate__animated", "animate__headShake");
         }, 1300);
         document.getElementById("contact-email").classList.remove("animate__animated", "animate__headShake");
-    }
-    const scrollToSkills= () => {
-        document.getElementById("skills").scrollIntoView({behavior: "smooth"});
-    }
+    };
+    const scrollToSkills = () => {
+        document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
+    };
     const scrollToProjects = () => {
-        document.getElementById("recent-projects").scrollIntoView({behavior: "smooth"});
-    }
+        document.getElementById("recent-projects").scrollIntoView({ behavior: "smooth" });
+    };
 
     const emailClick = () => {
         window.location.href = "mailto:anzelsakamoto@gmail.com";
@@ -67,7 +62,7 @@ export default function Header() {
         <>
             <header>
                 <div className="width-limiter align-center justify-evenly">
-                    <a id="logo-text" className="align-center" href="/zeru-sakamoto.dev/">
+                    <a id="logo-text" className="align-center" href="/portfolio/">
                         <img src={Logo} alt="Logo" width={60} />
                         <h1>Zeru</h1>
                     </a>
@@ -91,7 +86,10 @@ export default function Header() {
 
                     <ul id="social-links" className="align-center">
                         <li>
-                            <a id="linkedIn" href="https://www.linkedin.com/in/anzel-ken-sakamoto-2437bb250" title="LinkedIn">
+                            <a
+                                id="linkedIn"
+                                href="https://www.linkedin.com/in/anzel-ken-sakamoto-2437bb250"
+                                title="LinkedIn">
                                 <img src={LinkedIn} alt="LinkedIn Icon" width={25} height={25} />
                             </a>
                         </li>
@@ -114,8 +112,7 @@ export default function Header() {
                     </ul>
 
                     <button id="side-nav-btn" onClick={toggleSideNav}>
-                        <img src={Menu} alt="Menu" width={40}
-                         height={40}/>
+                        <img src={Menu} alt="Menu" width={40} height={40} />
                     </button>
                 </div>
             </header>
