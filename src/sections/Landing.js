@@ -30,7 +30,7 @@ export default function Landing() {
                     <span className="span-title-landing">&lt;Simple, Yet Expressive /&gt;</span>
                     <h1>{text}</h1>
                     <p className="paragraph">
-                        Hello, I'm Anzel Sakamoto a full-stack developer with a passion for design.
+                        Hello, I'm Anzel Sakamoto a Full-Stack Developer specializing in UI/UX Design.
                     </p>
                     <button id="projects-button" onClick={scrollToProjects}>
                         VIew Projects
