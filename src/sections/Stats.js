@@ -10,7 +10,7 @@ export default function Stats() {
         {
             Stat: "120+",
             Image: "stats/uielement-icon.png",
-            Text: "UI elements designed",
+            Text: "UI original elements designed",
         },
     ];
 
