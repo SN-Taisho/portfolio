@@ -11,7 +11,7 @@ export default function Stats() {
         {
             Stat: "120+",
             Image: "stats/uielement-icon.png",
-            Text: "UI original elements designed",
+            Text: "original UI elements designed",
         },
     ];
 
