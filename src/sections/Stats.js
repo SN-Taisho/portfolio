@@ -3,9 +3,10 @@ import ScrollAnimation from "react-animate-on-scroll";
 export default function Stats() {
     const statList = [
         {
-            Stat: "2000+",
+            // Actual number 2,457 up to (Jan 5, 2025)
+            Stat: "2,500",
             Image: "stats/hourglass-icon.png",
-            Text: "hours of experience",
+            Text: "hours of work experience",
         },
         {
             Stat: "120+",
